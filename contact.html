@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="contact-page">
+      <fieldset>
+        <legend>Contact details</legend>
+        <div class="success"></div>
+        <form>
+          <div class="form">
+            <label for="name"
+              >Name <input type="text" name="name" id="name" placeholder="Name"
+            /></label>
+            <div class="error-message" id="name-error">Required</div>
+          </div>
+          <div class="form">
+            <label for="subject"
+              >Subject
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+            /></label>
+            <div class="error-message" id="subject-error">
+              Subject name must be at least 10 characters
+            </div>
+          </div>
+          <div class="form">
+            <label for="email"
+              >E-mail
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="your@email.com"
+            /></label>
+            <div class="error-message" id="email-error">
+              Please enter a valid e-mail adress
+            </div>
+          </div>
+          <div class="form">
+            <label for="address"
+              >Address
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Address"
+            /></label>
+            <div class="error-message" id="address-error">
+              Address must be at least 25 characters
+            </div>
+          </div>
+          <div class="submit-wrapper">
+            <button type="submit">SUBMIT</button>
+            <div class="validate"></div>
+          </div>
+        </form>
+      </fieldset>
+    </main>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
